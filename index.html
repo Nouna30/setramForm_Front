@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulaire Demande Abonnement DOU - Student Submission Form</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        
+    <header>
+        <div class="header_container">
+            <div class="header_content">
+                <div class="header_title">
+                    <img src="https://formulaire.setram.dz/images/setram-logo.png" alt="SETRAM Logo" class="logo">
+                    <h1>Formulaire Demande Abonnement DOU</h1>
+                </div>
+                <div class="lang">
+                    <a href="indexFR.html" class="lang-link active">
+                        Français
+                    </a>
+                    <a href="indexAR.html" class="lang-link ">
+                        العربية
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="form_container">
+            <p class="subtitle">Veuillez remplir tous les champs obligatoires marqués d'un astérisque (*)</p>
+            
+            <form id="submission-form" action="" method="POST">
+                <input type="hidden" autocomplete="off">        
+                <div class="input_section">
+                    <div class="form_field">
+                        <label for="first_name">
+                            Prénom <span class="required">*</span>
+                        </label>
+                        <input type="text" id="first_name" name="first_name" value="" required="" class="" placeholder="Prénom">
+                    </div>
+
+                    
+                    <div class="form_field">
+                        <label for="last_name">
+                            Nom <span class="required">*</span>
+                        </label>
+                        <input type="text" id="last_name" name="last_name" value="" required="" class="" placeholder="Nom">
+                     </div>
+
+                    
+                    <div class="form_field">
+                        <label for="email">
+                            Adresse e-mail <span class="required">*</span>
+                        </label>
+                        <input type="email" id="email" name="email" value="" required="" class="" placeholder="example@email.com">
+                                    </div>
+
+                    
+                    <div class="form_field">
+                        <label for="matricule">
+                            Matricule (sans année du bac au début) <span class="required">*</span>
+                        </label>
+                        <input type="text" id="matricule" name="matricule" value="" required="" class="" placeholder="Sans année du bac au début">
+                                    </div>
+
+                    
+                    <div class="form_field">
+                        <label for="bac_year">
+                            Année du Baccalauréat <span class="required">*</span>
+                        </label>
+                        <input type="number" id="bac_year" name="bac_year" value="" required="" min="1950" max="2026" placeholder="YYYY">
+                                    </div>
+
+                    
+                    <div class="form_field">
+                        <label for="phone_number">
+                            Numéro de téléphone <span class="required">*</span>
+                        </label>
+                        <input type="tel" id="phone_number" name="phone_number" value="" required="" class="" placeholder="0512345678">
+                                    </div>
+
+                    
+                    <div class="form_field">
+                        <label for="university">
+                            Université <span class="required">*</span>
+                        </label>
+                        <select id="university" name="university" required="" class="">
+                            <option value="">Sélectionnez une université</option>
+                            <option value="droit_sciences_politiques">
+                                Droit et Sciences Politiques
+                            </option>
+                            <option value="ecole_polytechnique">
+                                École Nationale Polytechnique
+                            </option>
+                            <option value="ecole_sciences_politiques">
+                                École Nationale Supérieure des Sciences Politiques
+                            </option>
+                            <option value="ecole_technologies_avancees">
+                                École Nationale Supérieure des Technologies Avancées
+                            </option>
+                            <option value="ecole_mathematiques">
+                                École Nationale Supérieure en Mathématiques Alger Pôle de Sidi Abdellah
+                            </option>
+                            <option value="ecole_veterinaire">
+                                École Nationale Supérieure Vétérinaire
+                            </option>
+                            <option value="ecole_architecture">
+                                École Polytechnique d'Architecture et d'Urbanisme Le Moudjahid Hocine Ait Ahmed
+                            </option>
+                            <option value="mathematiques_informatique">
+                                Mathématiques et Informatique
+                            </option>
+                            <option value="sciences_economiques">
+                                Sciences Économiques, de Gestion et Sciences Commerciales
+                            </option>
+                            <option value="univ_alger_3">
+                                Université Alger 3
+                            </option>
+                            <option value="univ_alger_1">
+                                Université d'Alger 1
+                            </option>
+                            <option value="univ_alger_2">
+                                Université d'Alger 2
+                            </option>
+                            <option value="usthb">
+                                Université des Sciences et de la Technologie Houari Boumediene Alger
+                            </option>
+                        </select>
+                </div>
+                </div>
+
+                <div class="photo_section">
+                    <label for="photo">
+                        Photo d'identite
+                    </label>
+                    <div class="photo_container">
+                        <p class="photo_title">Exemple de format de photo d'identité :</p>
+                        <img src="https://www.setram.dz/uploads/model_photo.png" alt="Exemple de format de photo d'identité" class="photo_image">
+                    </div>
+                    
+                    <input type="file" id="photo" name="photo" accept="image/jpeg,image/png" class="file" >
+                    <p class="hint">
+                        Veuillez insérer la photo d'identité qui sera utilisée pour votre carte d'abonnement DOU<br>
+                        <span>JPEG/PNG, max 3 MB</span>
+                    </p>
+                                
+                    
+            <div class="submit_container">
+                <button type="submit" id="submit_btn">
+                    <span id="submit-text" class="submit_content">
+                        Soumettre ma demande
+                    </span>
+                </button>
+            </div>
+            
+            <div class="contact_info">
+                <p>
+                    En cas de problème, demande d'information ou modification, veuillez contacter le service client SETRAM via 
+                    <a href="https://www.setram.dz/customer/ticket" target="_blank">
+                        ce lien.
+                    </a>
+                </p>
+            </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
